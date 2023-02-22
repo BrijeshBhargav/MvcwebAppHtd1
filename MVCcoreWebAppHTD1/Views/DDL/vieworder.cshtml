@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "vieworder";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+
+<h1>vieworder</h1>
+
+@Html.BeginForm("ViewDropDown","DDL",FormMethod.Post)
+{
+    
+@Html.DropDownList("test",new SelectList(ViewBag.data,"OrderDate","OrderDate"),"please select",new{@id="ddlfruits"})
+@Html.DropDownList("demo",new SelectList(ViewBag.data,"OrderDate","OrderDate"),"please select",new{@id="ddlfruits"})
+
+<input type="submit" value="submit"/>

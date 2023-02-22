@@ -1,0 +1,48 @@
+﻿@using MVCcoreWebAppHTD1.Models
+@model EncryptedModel
+@{
+    ViewData["Title"] = "AddData";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+
+<h1>AddData</h1>
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Encryped form</h2>
+ @using( @Html.BeginForm())
+  {
+@*  <form action="/action_page.php">*@
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+         @Html.TextBoxFor(model => model.EmailID, new { @class = "form-control", placeholder="Enter Emailid" })
+     
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+     @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder="Enter password" })
+    </div>
+    <div class="form-check mb-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+     <div class="form-check mb-3">
+      @ViewData["EmailID"]
+      @ViewData["Password"]
+    </div>
+   
+ 
+  }
+</div>
+
+</body>
+</html>

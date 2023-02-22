@@ -1,0 +1,126 @@
+﻿@model IEnumerable<MVCcoreWebAppHTD1.Models.studentdatamodel>
+@{
+    ViewData["Title"] = "displaydata";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>DataTables example - Bootstrap 5</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="/media/js/site.js?_=d279d6aa7c08459eca950dd4a9ff4b23"></script>
+    <script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+    <script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap5.html" async></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+    <script type="text/javascript" class="init">
+
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+
+
+    </script>
+</head>
+<body>
+    <div class="dataTable table table-hover table-striped table-bordered">
+        <div class="#example">
+
+            <div class="info">
+            </div>
+            <div class="demo-html">
+            </div>
+        </div>
+    </div>
+    <table id="example" class="table table-striped" style="width:100%">
+        <dx:BootstrapGridView runat="server" DataSourceID="EmployeesDataSource" KeyFieldName="EmployeeID">
+            <ClientSideEvents Init="initMoreButton" EndCallback="initMoreButton" />
+
+
+            <tr>
+                <th>RefID</th>
+                <th>Name</th>
+                <th>EmailID</th>
+                <th>Password</th>
+                <th>Mobile</th>
+
+
+
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Fee</th>
+                <th>Branch</th>
+                <th>Status</th>
+                <th>role </th>
+
+
+                <th>Action</th>
+            </tr>
+
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.RefID</td>
+
+
+
+                    <td>@item.Name</td>
+
+
+
+                    <td>@item.EmailId</td>
+
+
+
+                    <td>@item.Password</td>
+
+
+
+                    <td>@item.Mobile</td>
+
+
+
+                    <td>@item.Gender</td>
+
+
+
+                    <td>@item.DOB</td>
+
+                    <td>@item.Fee</td>
+
+                    <td>@item.Branch</td>
+
+                    <td>@item.status</td>
+
+                    <td>@item.role</td>
+
+
+
+                    @if (this.User.IsInRole("Admin") || !this.User.Identity.IsAuthenticated)
+                    {
+                        <td>
+                            @Html.ActionLink("Update","Edit","student", new {Refid = item.RefID},null) |
+                            @Html.ActionLink("Delete","Delete","student", new {Refid = item.RefID},  new { onclick = "return confirm('Are sure wants to delete?');" })
+                        </td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                </tr>
+            }
+
+
+
+
+    </table>
+</body>
+</html>
+

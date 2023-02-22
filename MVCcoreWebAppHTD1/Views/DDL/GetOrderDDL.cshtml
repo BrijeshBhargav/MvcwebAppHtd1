@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "GetOrderDDL";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+
+<h1>GetOrderDDL</h1>
+
+@using (Html.BeginForm())
+{
+    if (ViewData["Value"] == null)
+    {
+        @Html.DropDownList("test", new SelectList(ViewBag.data,"OrderDate","OrderDate"), "Please select", new { @id = "ddlFruits" })
+        @Html.DropDownList("demo",new SelectList(ViewBag.data,"OrderDate","OrderDate"),"please select",new{@id="ddlfruits"})
+
+        <input type="submit" value="submit" />
+    }
+    else
+    {
+       
+        <table class="table table-striped">
+            <tr>
+                <th>OrderiD</th>
+                <th>CustomerID</th>
+                <th>Emp ID</th>
+                <th>Required Date</th>
+                <th>Shipped Date</th>
+            </tr>
+            @foreach (var item in ViewData["Val"] as List<MVCcoreWebAppHTD1.Models.OrdersModel>)
+            {
+                <tr>
+                    <td>@item.OrderID</td>
+                    <td>@item.CustomerID</td>
+                    <td>@item.EmployeeID</td>
+                    <td>@item.RequiredDate</td>
+                    <td>@item.ShippedDate</td>
+                </tr>
+            }
+        </table>
+    }
+}
+}

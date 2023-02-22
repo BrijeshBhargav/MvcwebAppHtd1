@@ -1,0 +1,151 @@
+﻿@model IEnumerable<MVCcoreWebAppHTD1.Models.Books>
+
+@{
+    ViewData["Title"] = "BookList";
+}
+
+<h1>BookList</h1>
+<head>
+
+   
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+</head>
+
+<div>
+    <a asp-action="AddNewBooks" class=" btn btn-sm btn-info">
+        <i class="fa fa-plus"></i><b>ADD Books</b>
+    </a>
+</div>
+<section class="intro">
+    <div class="bg-image h-100" style="background-color: #6095F0;">
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
+                            <div class="card-body">
+                                <div class="container">
+                                   
+                                    <div class="form-outline">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" id="myInput" class="form" placeholder="Search Here...">
+                                        <span class="right-pan color: red;"><i></i></span>
+                                    </div>
+                                   
+
+                                    <table id="dtBasicExample" class="table table-borderless mb-0">
+                                        <thead >
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.ID)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.TITLE)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.AUTHOR)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.DESCRIPTION)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.PUBLISHED_YEAR)
+                                                </th>
+
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="myTable">
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.ID)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.TITLE)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.AUTHOR)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.DESCRIPTION)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.PUBLISHED_YEAR)
+                                                    </td>
+                                                    <td>
+                                                        <a asp-action="Edit" asp-route-id="@item.ID"><i class="text-sucess"><i class="fa fa-edit fa-lg btn-lg ;"></i></a>
+                                                       @* <button type="button" rel="tooltip" class="fa fa-edit fa-lg btn-sm ;" data-original-title="" title="">
+                                                            <i class="material-icons"> </i>
+                                                            @Html.ActionLink("Edit","Edit","Books",new {ID = item.ID},null)
+                                                        </button>*@
+                                                        <a asp-action="Details" asp-route-id="@item.ID"><i class="text-dark"><i class="fa fa-eye fa-lg btn-lg ;"></i></a>
+                                                        @*<button type="button" rel="tooltip" class="fa fa-user  btn-sm" data-original-title="" title="">
+                                                            <i class="material-icons"></i>
+                                                            @Html.ActionLink("Details","Details","Books",new {ID = item.ID},null)
+                                                        </button>*@
+                                                        <a asp-action="Delete" asp-route-id="@item.ID">
+                                                            <i class=" text-danger ml-1"onclick="return confirm('Are you sure to delete this record..?')"><i class="fa fa-trash fa-lg btn-lg"></i></i></a>
+                                                       @* <button type="button" rel="tooltip" class="fa fa-trash btn-sm" data-original-title="" title="">
+                                                            <i class="material-icons"></i>
+                                                        @Html.ActionLink("Delete","Delete","Books", new {ID = item.ID},new{ onclick="return confirm ('Are you sure want to delete blog?')"})
+                                                        </button>*@
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                 @*   //pagination*@
+                                     <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+   
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+@* //search script*@
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+@*<script>
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable({
+    "paging": True 
+  });
+  $('.dataTables_length').addClass('bs-select');
+});
+</script*@>

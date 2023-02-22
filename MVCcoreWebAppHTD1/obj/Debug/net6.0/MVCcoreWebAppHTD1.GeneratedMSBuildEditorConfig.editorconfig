@@ -1,0 +1,300 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVCcoreWebAppHTD1
+build_property.RootNamespace = MVCcoreWebAppHTD1
+build_property.ProjectDir = C:\Users\HP\source\repos\MVCcoreWebAppHTD1\MVCcoreWebAppHTD1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\HP\source\repos\MVCcoreWebAppHTD1\MVCcoreWebAppHTD1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Admin/AdminHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Books/AddNewBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRkTmV3Qm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Books/BookList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQm9va0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Contact/BulkData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxCdWxrRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Contact/BulkData1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxCdWxrRGF0YTEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Contact/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/GetCounonDDL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXEdldENvdW5vbkRETC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/GetDataonDDL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXEdldERhdGFvbkRETC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/GetDataonShip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXEdldERhdGFvblNoaXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/GetOrderDDL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXEdldE9yZGVyRERMLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/ViewCoun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXFZpZXdDb3VuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/ViewDropDown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXFZpZXdEcm9wRG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/vieworder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXHZpZXdvcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/DDL/viewship.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRERMXHZpZXdzaGlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Demo/addition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xhZGRpdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Demo/multiplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xtdWx0aXBsaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Demo/substraction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xzdWJzdHJhY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Demo/test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1x0ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Emp/display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wXGRpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Emp/grid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wXGdyaWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Encrypt/AddData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jcnlwdFxBZGREYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Encrypt/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jcnlwdFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/FileUpload/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9hZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/FileUpload/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9hZFxVcGxvYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/RoleBased/Access.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUJhc2VkXEFjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/RoleBased/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUJhc2VkXERpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Shared/_adminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Shared/_userLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF91c2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/StoreData/ExonViewData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVEYXRhXEV4b25WaWV3RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/StoreData/ViewDataEx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVEYXRhXFZpZXdEYXRhRXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/bulkdata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxidWxrZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/cal2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxjYWwyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/calculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxjYWxjdWxhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/check.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxjaGVjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Checkdrop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxDaGVja2Ryb3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxkYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/displaybulk.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxkaXNwbGF5YnVsay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Displaycal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxEaXNwbGF5Y2FsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/displaydata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxkaXNwbGF5ZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/forgotpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxmb3Jnb3RwYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxJbmRleDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/IndexCalculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxJbmRleENhbGN1bGF0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Login2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxMb2dpbjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/StudentHomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxTdHVkZW50SG9tZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/VerifyOTP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxWZXJpZnlPVFAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/student/VerifyOTP2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc3R1ZGVudFxWZXJpZnlPVFAyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/task3/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGFzazNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/task3/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGFzazNcRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/task3/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGFzazNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/task3/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGFzazNcSW5zZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test2/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdDJcRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test2/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdDJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test2/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdDJcSW5zZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test/GetDataoncar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxHZXREYXRhb25jYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test/partial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxwYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/test/ViewDropDown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxWaWV3RHJvcERvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/source/repos/MVCcoreWebAppHTD1/MVCcoreWebAppHTD1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2i52wwu0d8

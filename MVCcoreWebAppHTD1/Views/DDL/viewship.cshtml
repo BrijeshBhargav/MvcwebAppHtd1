@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "viewship";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+
+<h1>viewship</h1>
+
+@Html.BeginForm("viewship","DDL",FormMethod.Post)
+{
+    
+@Html.DropDownList("test",new SelectList(ViewBag.data,"ShippedDate","ShippedDate"),"please select",new{@id="ddlfruits"})
+
+
+<input type="submit" value="submit"/>
+}

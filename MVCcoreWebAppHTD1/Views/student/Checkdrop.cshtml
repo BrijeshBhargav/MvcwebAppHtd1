@@ -1,0 +1,109 @@
+﻿@using MVCcoreWebAppHTD1.Models
+
+@model checkboxModel1
+<h1>DROP DOWNLIST</h1>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Register</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+
+
+        input[type=checkbox] {
+            vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+
+
+
+        label {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3">
+
+                <div class="signup-form mt-5 border p-4 bg-light shadow">
+
+                    @using (Html.BeginForm())
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                check box Data
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <label>Qualification<span class="text-danger">*</span></label>
+                                @Html.CheckBoxFor(model=>model.qualification,new { @id1 = "SSC-true"  })
+                                @Html.Label("SSC-true", "SSC")
+                                @Html.CheckBoxFor(model=>model.qualification1,new { @id1 = "INTER-true"  })
+                                @Html.Label("INTER-true", "INTER")
+                                @Html.CheckBoxFor(model=>model.qualification2,new { @id1 = "DIPLOMA-true"  })
+                                @Html.Label("DIPLOMA-true", "DIPLOMA")
+                                @Html.CheckBoxFor(model=>model.qualification3,new { @id1 = "b-tech-true"  })
+                                @Html.Label("b-tech-true", "B-tech")
+                                @Html.CheckBoxFor(model=>model.qualification4, new { @id2 = "m-tech-true"  })
+                                @Html.Label("m-tech-true", "M-tech")
+                                @Html.CheckBoxFor(model=>model.qualification5, new { @id3 = "mba-true"  })
+                                @Html.Label("mba-true", "MBA")
+                            </ul>
+                        </li>
+
+
+
+                        <div class="col-md-10">
+
+                            <p class="text-center mt-3 text-secondary">If you want to go back to home ,  @Html.ActionLink("studentpage","","student")</p>
+                            <p class="text-center mt-3 text-secondary">If you have account,  @Html.ActionLink("Login","Login","student")</p>
+
+                            <input type="submit" class="btn btn-primary float-end" value="Submit">
+
+
+                        </div>
+
+
+
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

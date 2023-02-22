@@ -1,0 +1,49 @@
+﻿@model MVCcoreWebAppHTD1.Models.Books
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Books</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TITLE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TITLE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AUTHOR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AUTHOR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DESCRIPTION)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DESCRIPTION)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PUBLISHED_YEAR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PUBLISHED_YEAR)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="BookList" class=" btn btn-sm btn-dark">
+        <i class="fa fa-plus"></i><b>Back to list</b>
+    </a>
+</div>

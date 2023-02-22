@@ -1,0 +1,25 @@
+﻿@using MVCcoreWebAppHTD1.Models
+@model RoleModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Access</title>
+   
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+    @Html.TextBoxFor(model => model.EmailID, new { @class = "form-control", placeholder="Enter Emailid" })
+    @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder="Enter password" })
+    <div class="form-check mb-3">
+            <button  class="btn btn-primary" type="submit">Login</button>
+    </div>
+    }
+</body>
+</html>

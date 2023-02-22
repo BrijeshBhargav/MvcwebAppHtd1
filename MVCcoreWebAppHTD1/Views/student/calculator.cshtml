@@ -1,0 +1,285 @@
+﻿@using MVCcoreWebAppHTD1.Models
+@model calculator3
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+		integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+		integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<!-- for styling -->
+	<style>
+		body {
+			background-color: tan;
+		}
+
+		.box {
+			background-color: #3d4543;
+			height: 250px;
+			width: 270px;
+			border-radius: 10px;
+			position: relative;
+			top: 80px;
+			left: 40%;
+		}
+
+		.display {
+			background-color: #222;
+			width: 420px;
+			position: relative;
+			left: 15px;
+			top: 20px;
+			height: 40px;
+		}
+
+			.display input {
+				position: relative;
+				left: 2px;
+				top: 2px;
+				height: 35px;
+				color: black;
+				background-color: #bccd95;
+				font-size: 21px;
+				text-align: right;
+			}
+
+		.keys {
+			position: relative;
+			top: 15px;
+		}
+
+		.button {
+			width: 40px;
+			height: 30px;
+			border: none;
+			border-radius: 8px;
+			margin-left: 17px;
+			cursor: pointer;
+			border-top: 2px solid transparent;
+		}
+
+			.button.gray {
+				color: black;
+				font-color: black;
+				background-color: #6f6f6f;
+				border-bottom: black 2px solid;
+				border-top: 2px #6f6f6f solid;
+			}
+
+		.title:hover {
+			color: #fff;
+		}
+
+		.title {
+			margin-bottom: 10px;
+			margin-top: 30px;
+			padding: 5px 0;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			color: black;
+			font-family: 'Cookie', cursive;
+		}
+
+		.button.pink {
+			color: black;
+			background-color: #ff4561;
+			border-bottom: black 2px solid;
+		}
+
+		.button.black {
+			color: black;
+			background-color: 303030;
+			border-bottom: black 2px solid;
+			border-top: 2px 303030 solid;
+			font-weight: bold;
+		}
+
+		.button.orange {
+			color: black;
+			background-color: FF9933;
+			border-bottom: black 2px solid;
+			border-top: 2px FF9933 solid;
+		}
+
+		.gray:active {
+			border-top: black 2px solid;
+			border-bottom: 2px #6f6f6f solid;
+		}
+
+		.pink:active {
+			border-top: black 2px solid;
+			border-bottom: #ff4561 2px solid;
+		}
+
+		.black:active {
+			border-top: black 2px solid;
+			border-bottom: #303030 2px solid;
+		}
+
+		.orange:active {
+			border-top: black 2px solid;
+			border-bottom: FF9933 2px solid;
+		}
+
+		p {
+			line-height: 10px;
+		}
+	</style>
+</head>
+<!-- create table -->
+@using(Html.BeginForm())
+{
+<body>
+		<tr>
+			<td>@Html.ActionLink("Display Data","Displaycal","student",null)</td>
+		<div class="title? align="centre">
+			<div class="box">
+				<div class="keys">
+			<table id="calcu"  >
+		<tr>
+			
+			@ViewBag.data
+			<td colspan="12">@Html.TextBoxFor(model=>model.result,new{id="Result"})</td>
+			
+		</tr>
+	
+		<tr>
+						<td> <input type="submit" class="button gray" value="mrc" onclick='c("Created....................")'></td>
+						<td><input type="submit" class="button gray" value="m-" onclick='c("...............by............")'></td>
+						<td>
+							<input type="submit" class="button gray"
+							   value="m+" onclick='c(".....................Brijesh")'>
+						</td>
+					<td>	<input type="button" class="button pink" value="/" onclick="dis('/')"
+						   onkeydown="myFunction(event)"> </td>
+				</tr>
+		<tr>
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+				<td>
+		        <input type="button" class="button black" value="1" onclick="dis('1')"
+						onkeydown="myFunction(event)"> </td>
+						
+				<td>
+					<input type="button" class="button black" value="2" onclick="dis('2')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="3" onclick="dis('3')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button pink" value="+" onclick="dis('+')"
+						onkeydown="myFunction(event)"> </td>
+		</tr>
+		<tr>
+			
+				<td>
+					<input type="button" class="button black" value="4" onclick="dis('4')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="5" onclick="dis('5')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="6" onclick="dis('6')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button pink" value="-" onclick="dis('-')"
+					  onkeydown="myFunction(event)">
+				</td>
+				
+		</tr>
+		<tr>
+			
+				<td>
+					<input type="button" class="button black" value="7" onclick="dis('7')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="8" onclick="dis('8')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="9" onclick="dis('9')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button pink" value="*" onclick="dis('*')"
+							   onkeydown="myFunction(event)">
+				</td>
+		</tr>
+		<tr>
+			
+						
+				<td>
+					<input type="button" class="button black" value="0" onclick="dis('0')"
+						onkeydown="myFunction(event)"> </td>
+				<td>
+					<input type="button" class="button black" value="." onclick="dis('.')"
+						onkeydown="myFunction(event)"> </td>
+				<!-- clr() function will call clr to clear all value -->
+				<td><input type="button" class="button pink" value="c" onclick="clr()" /> </td>
+			<!-- solve function call function solve to evaluate value -->
+			@*<td><input type="button" value="=" onclick="solve()"> </td>*@
+							<td><input type="button" class="button orange" value="=" onclick="solve()"> </td>
+				
+		</tr>
+						<tr>
+							<td>
+								<input type="submit" class="button orange" value="=" />
+							</td>
+						</tr>
+		
+	</table>
+	</div>
+	<script>
+		// Function that display value
+		function dis(val) {
+			document.getElementById("Result").value += val
+		}
+
+		function myFunction(event) {
+			if (event.key == '0' || event.key == '1'
+				|| event.key == '2' || event.key == '3'
+				|| event.key == '4' || event.key == '5'
+				|| event.key == '6' || event.key == '7'
+				|| event.key == '8' || event.key == '9'
+				|| event.key == '+' || event.key == '-'
+				|| event.key == '*' || event.key == '/')
+				document.getElementById("Result").value += event.key;
+		}
+
+		var cal = document.getElementById("calcu");
+		cal.onkeyup = function (event) {
+			if (event.keyCode === 13) {
+				console.log("Enter");
+				let x = document.getElementById("Result").value
+				console.log(x);
+				solve();
+			}
+		}
+
+		// Function that evaluates the digit and return result
+		function solve() {
+			let x = document.getElementById("Result").value
+			let y = math.evaluate(x)
+			document.getElementById("Result").value = y
+		}
+
+		// Function that clear the display
+		function clr() {
+			document.getElementById("Result").value = ""
+		}
+</script>
+</div>
+</div>
+		
+</body>
+}
+</html>

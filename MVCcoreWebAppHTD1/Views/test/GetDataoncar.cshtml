@@ -1,0 +1,41 @@
+﻿
+
+<h3>GetDataoncar</h3>
+
+
+@using (Html.BeginForm())
+{
+    if (ViewData["Val"] == null)
+    {
+        @Html.DropDownList("test", new SelectList(ViewBag.data, "cartype", "cartype"), "Please select", new { @id = "ddlFruits" })
+        <input type="submit" value="submit" />
+    }
+    else
+    {
+       
+        <table class="table table-striped">
+            <tr>
+                <th>car type</th>
+                <th>Commodity</th>
+                <th>Arrived Date</th>
+                <th>Notified Date</th>
+                <th>credits</th>
+                <th>missedswitch</th>
+
+ 
+
+            </tr>
+            @foreach (var item in ViewData["Val"] as List<MVCcoreWebAppHTD1.Models.testModel>)
+            {
+                <tr>
+                    <td>@item.cartype</td>
+                    <td>@item.commodity</td>
+                    <td>@item.Arrived</td>
+                    <td>@item.Notified</td>
+                    <td>@item.credits</td>
+                    <td>@item.missedswitch</td>
+                </tr>
+            }
+        </table>
+    }
+}

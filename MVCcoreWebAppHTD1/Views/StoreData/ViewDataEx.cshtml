@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "ViewDataEx";
+    Layout = "~/Views/Shared/_userLayout.cshtml";
+}
+
+<h1>ViewDataEx</h1>
+
+@using (Html.BeginForm())
+{    
+    <table class="table">
+        <tr>
+            <td>EID</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+        @foreach (var item in ViewData["EmpList"]as List<MVCcoreWebAppHTD1.Models.ViewDataModel>)
+        {
+            <tr>
+                <td>@item.Eid</td>
+                <td>@item.Name</td>
+                <td>@item.Address</td>
+            </tr>
+        }            
+    </table>
+}

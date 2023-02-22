@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MVCcoreWebAppHTD1.Models.CalculatorModel1>
+
+
+
+<div class="container">
+    Display Data Page
+    @Html.ActionLink("Back to Calculator","calculator","student",null)
+</div>
+
+
+
+<table  class="dataTable table table-hover table-striped table-bordered">
+    <tr>
+        <th>number1</th>
+        <th>number2</th>
+        <th>operation</th>
+
+
+
+        <th>result</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.number1</td>
+            <td>@item.number2</td>
+            <td>@item.operation</td>
+            <td>@item.result</td>
+
+        </tr>
+    }
+</table>

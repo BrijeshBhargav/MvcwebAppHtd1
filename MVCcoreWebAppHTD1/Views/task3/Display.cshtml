@@ -1,0 +1,102 @@
+﻿@model IEnumerable<MVCcoreWebAppHTD1.Models.BookModel>
+@{
+    ViewData["Title"] = "Display";
+ 
+}
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>DataTables example - Bootstrap 5</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="/media/js/site.js?_=d279d6aa7c08459eca950dd4a9ff4b23"></script>
+    <script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+    <script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap5.html" async></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+    <script type="text/javascript" class="init">
+
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+
+
+    </script>
+</head>
+<body>
+    <div class="dataTable table table-hover table-striped table-bordered">
+        <div class="#example">
+            <p>
+                @Html.ActionLink("Create New","Insert","task3")
+            </p>
+            <div class="info">
+            </div>
+            <div class="demo-html">
+            </div>
+        </div>
+    </div>
+    <table id="example" class="table table-striped" style="width:100%">
+        <dx:BootstrapGridView runat="server" DataSourceID="EmployeesDataSource" KeyFieldName="EmployeeID">
+            <ClientSideEvents Init="initMoreButton" EndCallback="initMoreButton" />
+
+
+            <tr>
+                <th>Title BookID</th>
+                <th>Title Name</th>
+                <th>Author Name</th>
+                <th>Description</th>
+                <th>PublishedYear</th>
+
+
+                <th>Action</th>
+            </tr>
+
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                 
+
+
+                    <td>@item.BookId </td>
+                    <td>@item.Title </td>
+
+
+
+                    <td>@item.Author</td>
+
+
+
+                    <td>@item.Description</td>
+
+
+
+                    <td>@item.PublishedYear</td>
+
+
+
+                 
+
+
+
+                    <td>
+                        @Html.ActionLink("Update","Edit","task3", new{BookId=item.BookId},null)
+                        @Html.ActionLink("Delete","Delete","task3", new{BookId=item.BookId}, new { onclick = "return confirm('Are you sure wants to delete?');" })
+                        @Html.ActionLink("Details","Details","task3", new{BookId=item.BookId},null)
+                    </td>
+
+                </tr>
+            }
+
+
+
+
+    </table>
+</body>
+</html>
+

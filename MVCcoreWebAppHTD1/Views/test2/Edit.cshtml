@@ -1,0 +1,95 @@
+﻿@model MVCcoreWebAppHTD1.Models.InsertModel
+
+
+@{
+    ViewData["Title"] = "Display";
+  
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <section class="h-10 bg-dark">
+        <div class="container py-5 h-10">
+            <div class="row d-flex justify-content-center align-items-center h-10">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0">
+                            <div class="col-mg-6 d-none d-mg-block">
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card-body p-md-5 text-black">
+                                    @using (Html.BeginForm())
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.HiddenFor(model => model.Id)
+                                        <h3 class="mb-5 text-uppercase">Edit</h3>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-6">
+                                                <div class="form-outline">
+                                                    <label>RollNo<span class="text-danger">*</span></label>
+                                                    @Html.TextBoxFor(model => model.Id, new { @class = "form-control", placeholder="Enter RollNo" })
+                                                    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-6">
+                                                <div class="form-outline">
+                                                    <label>Name<span class="text-danger">*</span></label>
+                                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder="Enter Name" })
+                                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-6">
+                                                <div class="form-outline">
+                                                    <label>EmailId<span class="text-danger">*</span></label>
+                                                    @Html.TextBoxFor(model => model.EmailId, new { @class = "form-control", placeholder="Enter Emailid" })
+                                                    @Html.ValidationMessageFor(model => model.EmailId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-6">
+                                                <div class="form-outline">
+                                                    <label>Password<span class="text-danger">*</span></label>
+                                                    @Html.PasswordFor(model => model.Password , new { @class = "form-control", placeholder="Enter password" })
+                                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                      
+
+                                      
+
+                                        <div class="d-flex justify-content-end pt-3">
+                                            <button type="button" class="btn btn-light btn-lg">Reset all</button>
+
+                                            <input type="submit" value="save" class="btn btn-primary">
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
+

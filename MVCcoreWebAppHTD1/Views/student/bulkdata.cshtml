@@ -1,0 +1,95 @@
+﻿@using MVCcoreWebAppHTD1.Models
+@model ContactInfo
+<head runat="server">
+    <title>Demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h2>Basic Table</h2>
+            <table class="table" id="maintable">
+                <thead>
+                    <tr>
+                        <th>ContactName</th>
+                        <th>ContactNo</th>
+                        <th>Emailid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="data-contact-person">
+                        <td>
+                            @*@<input type="text" name="f-name" class="form-control f-name01" /></td>*@
+                            @Html.TextBoxFor(model=> model.ContactName,new{@class="form-control f-name01",name="f-name"})
+                        <td>
+                                @*@<input type="text" name="l-name" class="form-control l-name01" /></td>*@
+                                @Html.TextBoxFor(model=> model.ContactNo,new{@class="form-control l-name01",name="l-name"})
+                        <td>
+                                    @*@<input type="text" name="email" class="form-control email01" /></td>*@
+                                    @Html.TextBoxFor(model=> model.Emailid,new{@class="form-control email01",name="email"})
+                        <td>
+                            <button type="button" id="btnAdd" class="btn btn-xs btn-primary classAdd">Add More</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" id="btnSubmit" class="btn btn-primary btn-md pull-right btn-sm">Submit</button>
+        </div>
+    </form>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on("click", ".classAdd", function () { //
+            var rowCount = $('.data-contact-person').length + 1;
+            var contactdiv = '<tr class="data-contact-person">' +
+                '<td><input type="text" name="f-name' + rowCount + '" class="form-control f-name01" /></td>' +
+                '<td><input type="text" name="l-name' + rowCount + '" class="form-control l-name01" /></td>' +
+                '<td><input type="text" name="email' + rowCount + '" class="form-control email01" /></td>' +
+                '<td><button type="button" id="btnAdd" class="btn btn-xs btn-primary classAdd">Add More</button>' +
+                '<button type="button" id="btnDelete" class="deleteContact btn btn btn-danger btn-xs">Remove</button></td>' +
+                '</tr>';
+            $('#maintable').append(contactdiv); // Adding these controls to Main table class
+        });
+    });
+    $(document).on("click", ".deleteContact", function () {
+        $(this).closest("tr").remove(); // closest used to remove the respective 'tr' in which I have my controls
+    });
+    function getAllEmpData() {
+        var data = [];
+        $('tr.data-contact-person').each(function () {
+            var firstName = $(this).find('.f-name01').val();//Bind to the first name with class f-name01
+            var lastName = $(this).find('.l-name01').val();//Bind to the last name with class l-name01
+            var emailId = $(this).find('.email01').val();//Bind to the emailId with class email01
+            var alldata = {
+                'FName': firstName, //FName as per Employee class name in .cs
+                'LName': lastName, //LName as per Employee class name in .cs
+                'EmailId': emailId //EmailId as per Employee class name in .cs
+            }
+            data.push(alldata);
+        });
+        console.log(data);//
+        return data;
+    }
+    $("#btnSubmit").click(function () {
+        var data = JSON.stringify(getAllEmpData());
+        //console.log(data);
+        $.ajax({
+            url: 'Home.aspx/SaveData',//Home.aspx is the page
+            type: 'POST',
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({ 'empdata': data }),
+            success: function () {
+                alert("Data Added Successfully");
+            },
+            error: function () {
+                alert("Error while inserting data");
+            }
+        });
+    });
+</script>

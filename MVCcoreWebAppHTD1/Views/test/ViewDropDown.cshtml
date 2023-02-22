@@ -1,0 +1,13 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<@Html.BeginForm("ViewDropDown","test",FormMethod.Post)
+{
+@Html.DropDownList("test",new SelectList(ViewBag.data,"cartype","cartype"),"please select",new{@id="ddlfruits"})
+<input type="submit" value="submit"/>
+
+}

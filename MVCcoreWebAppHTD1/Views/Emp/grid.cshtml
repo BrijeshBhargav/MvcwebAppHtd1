@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>grid</title>
+
+</head>
+<body>
+
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+
+    <script>
+$(function() {
+    $grid = $("#jqgrid", "Employee"),
+        url: '@Url.Action("GetData","Employee")',
+            mtype: 'Get',
+                datatype: 'json',
+                    colmodel: [
+                        { label: 'Name', name: 'Name' },
+                        { Label: 'Role', name: 'Role' },
+                        { Label: 'Age', name: 'Age' },
+                        { Label: 'Salary', name: 'Salary' },
+
+                    ],
+                        loadonce : true
+                   });
+                });
+
+    </script>
+    }
+</body>
+</html>
